@@ -1,3 +1,3 @@
 # podioToExcel
 
-Get information from Podio's Apps and archieve them into Google Drive as Excel files
+Get information from Podio's Apps and archive them into Google Drive as Excel files
