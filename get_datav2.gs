@@ -3,8 +3,8 @@ var credentials = {
   password : "[YOUR PASSWORD HERE]",
   client_id : "[YOUR CLIENT_ID HERE]",
   client_secret : "[YOUR CLIENT_SECRET HERE]"
-  
 }
+//your credentials
 
 var stop_in = {
   name : "clubs-teams",
@@ -13,7 +13,10 @@ var stop_in = {
 }
 //gscript allows 6 min of runtime. To continue where it stopped, put the name and the number of the last excel file and turn check to "true"
 
+var limit = 11000
+//set the maximum value of rows the script can find in a podium's file.
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------//
 function runThisFunction(){
   var ids = [22861617,22861507,22861524,22872677,23301272,24581930,22979384,24398466,24529926,24416898,22979971]
   var names = ["confederations","clubs-teams", "companies","competitions","gov","public-agents","athletics","professionals","university-ecosystem","schools","universities"]
@@ -32,8 +35,6 @@ function runThisFunction(){
     offset = (stop_in.offset + 1) * 1000;
   }
   
-  //maximum value of rows from all the ids
-  var limit = 11000
   
   for (var i = 0; i < ids.length; i++){
     podioToDrive_xlsx(ids[i], names[i],limit,offset);
@@ -76,7 +77,5 @@ function podioToDrive_xlsx(appID, name, limit, offset) {
         break;
       }
     }
-    
   }
-
 }
