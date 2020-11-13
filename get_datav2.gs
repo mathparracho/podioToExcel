@@ -16,10 +16,13 @@ var stop_in = {
 var limit = 11000
 //set the maximum value of rows the script can find in a podium's file.
 
+var ids = [22861617,22861507,22861524,22872677,23301272,24581930,22979384,24398466,24529926,24416898,22979971]
+var names = ["confederations","clubs-teams", "companies","competitions","gov","public-agents","athletics","professionals","university-ecosystem","schools","universities"]
+//put the id and name of the apps, please put them respectively
+
+
 //-------------------------------------------------------------------------------------------------------------------------------------------------//
 function runThisFunction(){
-  var ids = [22861617,22861507,22861524,22872677,23301272,24581930,22979384,24398466,24529926,24416898,22979971]
-  var names = ["confederations","clubs-teams", "companies","competitions","gov","public-agents","athletics","professionals","university-ecosystem","schools","universities"]
   var offset = 0;
   
   //any time exception?
