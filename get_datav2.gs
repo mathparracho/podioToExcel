@@ -14,7 +14,6 @@ var stop_in = {
 //gscript allows 6 min of runtime. To continue where it stopped, put the name and the number of the last excel file and turn check to "true"
 
 
-
 function runThisFunction(){
   var ids = [22861617,22861507,22861524,22872677,23301272,24581930,22979384,24398466,24529926,24416898,22979971]
   var names = ["confederations","clubs-teams", "companies","competitions","gov","public-agents","athletics","professionals","university-ecosystem","schools","universities"]
