@@ -1,5 +1,9 @@
 # podioToExcel
 
+Collect data from Citrix Podio, generate them as Excel files to your Google Drive's account and organize all them inside your local PC.
+
+## How to:
+
 Paste the code in the "get_datav2.gs" file in a new project at the google script platform.
 
 Then, filling your credentials accordingly, run the function "runThisFunction()" to start the wrapper.
